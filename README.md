@@ -19,7 +19,7 @@ the stack is minimal:
 - Node.js 18+
 - An OpenAI API key (the code looks for `OPENAI_API_KEY` in a `.env` file at repo root)
 
-also keys for Anthropic, Gemini, or DeepSeek if you want to swap models.
+also keys for Anthropic, Gemini, or DeepSeek if WE want to swap models.
 
 ---
 
@@ -66,7 +66,7 @@ Vite serves the UI on `http://localhost:5173`. It expects the backend API at `ht
 1. Start the backend (port 8000).
 2. Start the frontend (port 5173).
 3. Visit `http://localhost:5173` and follow the flow:
-   - Choose “Myself”.
+   - Choose “Myself” or someone else.
    - Fill in name / sex / age.
    - Start the chat and type something like “I feel generally ill and tired”.
    - The UI should show one primary flowchart plus two alternates, the graph should render on the left, and chatting “Yes/No” should highlight the path.
