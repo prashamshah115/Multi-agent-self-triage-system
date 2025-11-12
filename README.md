@@ -17,6 +17,7 @@ This project introduces a conversational self-triage system that guides LLMs wit
   - [Table of Contents](#table-of-contents)
   - [Flowcharts](#flowcharts)
   - [Setup](#setup)
+  - [Backend – run FastAPI locally](#backend--run-fastapi-locally)
   - [Usage](#usage)
   - [Demo](#demo)
   - [Citation](#citation)
@@ -34,11 +35,16 @@ To access all flowcharts in full detail, obtain the original volume from the pub
 
 ## Setup
 To get started locally:
+
+**Option 1: Using conda (from upstream)**
 1. Run `bash setup.sh` to setup a conda virtual environment. 
 2. Once setup is complete, activate the environment: `conda activate triagemd`.
 3. Obtain API keys from model providers:
    - For example, create an OpenAI API key [here](https://platform.openai.com/api-keys).
 4. Configure your API key(s) in `Utils/utils.py` by adding them to the `set_up_api_keys()` function.
+
+**Option 2: Using venv (recommended for this fork)**
+## Backend – run FastAPI locally
 
 
 ## Usage
