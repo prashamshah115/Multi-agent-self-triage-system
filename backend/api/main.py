@@ -93,9 +93,10 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",  # Vite dev server
+        "http://localhost:5174",  # Vite dev server (alternate port)
         "http://localhost:3000",  # Alternative port
-        "https://*.github.io"     # GitHub Pages (production)
     ],
+    allow_origin_regex=r"https://.*\.github\.io",  # GitHub Pages (production)
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
