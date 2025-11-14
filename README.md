@@ -17,7 +17,10 @@ This project introduces a conversational self-triage system that guides LLMs wit
   - [Table of Contents](#table-of-contents)
   - [Flowcharts](#flowcharts)
   - [Setup](#setup)
+<<<<<<< HEAD
   - [Backend – run FastAPI locally](#backend--run-fastapi-locally)
+=======
+>>>>>>> 95e6383 (MINOR cors bug)
   - [Usage](#usage)
   - [Demo](#demo)
   - [Citation](#citation)
@@ -35,17 +38,14 @@ To access all flowcharts in full detail, obtain the original volume from the pub
 
 ## Setup
 To get started locally:
-
-**Option 1: Using conda (from upstream)**
 1. Run `bash setup.sh` to setup a conda virtual environment. 
 2. Once setup is complete, activate the environment: `conda activate triagemd`.
 3. Obtain API keys from model providers:
    - For example, create an OpenAI API key [here](https://platform.openai.com/api-keys).
 4. Configure your API key(s) in `Utils/utils.py` by adding them to the `set_up_api_keys()` function.
 
-**Option 2: Using venv (recommended for this fork)**
-## Backend – run FastAPI locally
 
+<<<<<<< HEAD
 
 ## Usage
 - `System`: contains the scripts for multi-agent system implementation and a user interface demo.
@@ -69,5 +69,29 @@ You can interact with the system through a web-based user interface for conversa
 ## Citation
 If you use this repository in academic work, please consider citing it. 
 
+=======
+## Usage
+- `System`: contains the scripts for multi-agent system implementation and a user interface demo.
+- `Evaluation`: contains the scripts and result examples for the evaluation tasks
+    - `synthetic-dataset`: contains the scripts for generating synthetic data (both opening statements and patient responses) with four different models. We also provide generated data samples for Feeling Generally Ill Flowchart.
+    - `flowchart-retrieval`: contains the script for testing flowchart retrieval performance, as well as the example results for Feeling Generally Ill Flowchart.
+    - `flowchart-navigation`: contains the script for testing flowchart navigation performance, as well as the example results for Feeling Generally Ill Flowchart.
+
+
+## Demo
+You can interact with the system through a web-based user interface for conversational self-triage.
+
+**To run the demo:**
+1. Run: `python System/user_interface.py`
+2. The script will display two URLs:
+   - First URL: for local use (localhost)
+   - Second URL: for public access
+
+**Note:** Currently, `Flowcharts/flowcharts.py` only contains the Feeling Generally Ill Flowchart. To query about other symptoms, you'll need to add more flowcharts to the file.
+
+## Citation
+If you use this repository in academic work, please consider citing it. 
+
+>>>>>>> 95e6383 (MINOR cors bug)
 ## Contact
 If you have any questions, feel free to contact us via email at nyjliu@ucsd.edu or open a GitHub Issue.
